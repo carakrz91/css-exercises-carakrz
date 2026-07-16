@@ -50,6 +50,7 @@ a {
 .right-group {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 button {
