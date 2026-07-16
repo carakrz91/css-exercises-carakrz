@@ -12,14 +12,16 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
 }
 
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
+.left-group {
+  display: flex;
+  justify-content: left;
+  flex: 0;
 }
 
 .logo {
@@ -27,6 +29,28 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: 0 16px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+   flex: 1;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+  margin: 0 6px;
+}
+
+.right-group {
+  display: flex;
+  justify-content: space-around;
 }
 
 button {
@@ -35,14 +59,15 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  flex: 0 1 1;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: 0 16px;
+  flex-shrink: 0;
 }
