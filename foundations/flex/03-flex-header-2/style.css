@@ -18,9 +18,10 @@ body {
    padding: 8px;
 }
 
-.left-group {
+.left-group, .right-group {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
 }
 
@@ -45,12 +46,6 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
-}
-
-.right-group {
-  display: flex;
-  gap: 16px;
-  align-items: center;
 }
 
 button {
