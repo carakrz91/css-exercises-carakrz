@@ -29,7 +29,7 @@ ul {
 }
 
 .footer {
-  background: lightgray;
+  background: #eeeeee;
   margin-top: auto;
 }
 
@@ -49,6 +49,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
