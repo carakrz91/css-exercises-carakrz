@@ -14,23 +14,28 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 32px;
   padding: 48px;
 }
 
 .header {
   background: darkmagenta;
   color: white;
-  padding: 16px;
+  padding: 0 16px;
   font-weight: 900;
   font-size: 32px;
+  display: flex;
+  align-items: center;
+  height: 72px;
 }
 
 .footer {
   background: #eee;
   color: darkmagenta;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
 }
 
 .sidebar {
@@ -45,22 +50,18 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  height: 400px;
   width: 300px;
-  padding: 8px;
+  padding: 16px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex-column;
-  justify-content: space-between;
-  flex-wrap: none;
 } 
 
 li {
-  margin: 5px 0;
+  margin-bottom: 16px;
 }
 
 a {
